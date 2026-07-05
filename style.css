@@ -187,8 +187,8 @@ h1,h2{
 }
 
 .hourCard{
-    border: 0.125em solid black;
-
+    
+    border: 1px solid rgba(255,255,255,0.15);
     flex:0 0 170px;
     max-height:180px;
     width: 180px;
