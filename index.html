@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <video id="bgVideo" autoplay muted playsinline>
+        <source src="./clear_night.mp4" type="video/mp4">
+    </video>
+
     <div id="background">
 
         <div id="sideCard">
@@ -24,7 +28,7 @@
 
             <div class="searchBar">
                 <input type="text" placeholder="Add New City" id="inputField">
-                <button type="submit" id="searchButton"><img src="/search_black.png" width="20vw" height="20vh"> </button>
+                <button type="submit" id="searchButton"><img src="./search_black.png" width="20vw" height="20vh"> </button>
             </div>
             
             <div class="savedCities">
@@ -33,14 +37,24 @@
         </div>
         
         <div id="mainPage">
-            <div class="Card" id="location">
-                <h1 id="cityName">Mumbai</h1>
-                <h2 id="temperature">27℃</h2>
-                <h2 id="currentCondition">Rain</h2>
-                <div id="hnw">
-                    <h3 id="high">29%</h3>
-                    <h3 id="low">15 km/hr</h3>
+            
+            <div id="topDiv">
+            
+                <div class="card" id="imgndtemp">
+                    <img id="weatherImg">
+                    <h2 id="temperature"> -- </h2>
                 </div>
+                
+                <div  id="location">
+                    <h1 id="cityName"> -- </h1>
+                    
+                    <h2 id="currentCondition"> -- </h2>
+                    <div id="hnw">
+                        <h3 id="high"> -- </h3>
+                        <h3 id="low"> -- </h3>
+                    </div>
+                </div>
+
             </div>
             
             
@@ -52,43 +66,64 @@
             <div  id="dashBoardGrid"> 
                 
                 <div class="Card" id="tenDayForecast">
-                    <h1>5 DAY FORECAST</h1>
+                    <h4>5 DAY FORECAST</h4>
                     
                     
                 </div>
                 
                 <div class="gridCard" id="humiCard">
+                    
+                    <img src="./humidity.png" class="cardImg">
+                    <div class="innerCard">
                     <h4>HUMIDITY</h4>
-                    <h1 id="humidity">86 %</h1>
+                    <h1 id="humidity"> -- </h1>
+                    </div>
+
                 </div>
 
                 <div class="gridCard" id="windCard">
                    
-                    <h1>WIND 💨</h1>
-                    <h1 class="wind">19</h1>
-                    <h1>kph</h1>
+                    <img src="./wind.png" class="cardImg" id="windImg">
+                    <div class="innerCard">
+                        <h4>WIND</h4>
+                        <h1 class="wind"> -- </h1>
+                    </div>
                     
                 </div>
 
                 <div class="gridCard" id="feelsLike">
-                    <h4>🌡️ Feels Like</h4>
-                    <h1 id="feelsLikeTemp">27</h1>
+                    
+                    <img src="./feels_like.png" class="cardImg">
+                    <div class="innerCard">
+                    <h4>FEELS LIKE</h4>
+                    <h1 id="feelsLikeTemp"> -- </h1>
+                    </div>
                 </div>
                 
                 <div class="gridCard" id="pressureCard">
-                    <h4>Pressure</h4>
-                    <h1 id="pressure">1,001 hPa</h1>
+
+                    <img src="./pressure.png" class="cardImg" id="pressureImg">
+                    <div class="innerCard">
+                    <h4>PRESSURE</h4>
+                    <h1 id="pressure"> -- hPa</h1>
+                    </div>
                 </div>
                 
                 <div class="gridCard" id="sunsetCard">
-                    <h4>🌅 SUNSET</h4>
-                    <h1 id="sunsetTime">7:20 PM</h1>
+                    <img src="./sunset.png" class="cardImg">
+                    <div class="innerCard">
+                    <h4>SUNSET</h4>
+                    <h1 id="sunsetTime"> -- </h1>
+                    </div>
                 </div>                
 
                 <div class="gridCard">
-                    <h1>VISIBILITY</h1>
-                    <h1 id="visibility">4</h1>
-                    <h1 id="vQuality">Moderate</h1>
+                    <img src="./visibility.png" class="cardImg">
+                    <div class="innerCard">
+                    <h4>VISIBILITY</h4>
+                    <h1 id="visibility"> -- </h1>
+                    <!-- <h1 id="vQuality"> -- </h1> -->
+                    </div>
                 </div>
                 
             </div> 
